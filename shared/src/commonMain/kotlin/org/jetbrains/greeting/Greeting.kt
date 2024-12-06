@@ -8,5 +8,6 @@ class Greeting {
     fun greet(): List<String> = buildList {
         add(if (Random.nextBoolean()) "Hi" else "Hello")
         add("Guess what it is ${platform.name.reversed()}")
+        add(remainingDaysPhrases())
     }
 }
